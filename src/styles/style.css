@@ -119,14 +119,19 @@ header .header__search {
   display: flex;
   position: relative;
 }
-header .header__search button {
+header .header__search label {
   background-color: transparent;
   border: none;
 }
 header .header__search input {
-  display: none;
   position: absolute;
   right: 32px;
+}
+header .header__search_hidden {
+  display: none;
+}
+header .header__search_visible {
+  display: block;
 }
 
 .menu {

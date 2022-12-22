@@ -11,9 +11,11 @@ function menuFunction() {
 
   function searchFunction() {
     var x = document.getElementById("search");
-    if (x.style.display === "flex") {
-      x.style.display = "none";
+    if (x.classList.contains("header__search_hidden")) {
+      x.classList.add("header__search_visible");
+      x.classList.remove("header__search_hidden");
     } else {
-      x.style.display = "flex";
+      x.classList.add("header__search_hidden");
+      x.classList.remove("header__search_visible");
     }
   }
