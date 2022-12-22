@@ -137,10 +137,15 @@ header {
             border: none;
         }
         input {
-            display: none;
             position: absolute;
             right: 32px;
         }
+    }
+    .header__search_visible {
+        display: block;
+    }
+    .header__search_hidden {
+        display: none;
     }
 }
 .menu {
